@@ -21,7 +21,7 @@
 
   <panel>
    <path>Aircraft/c172/Panels/c172-vfr-panel.xml</path>
-   <visibility>true</visibility>
+   <visibility>false</visibility>
   </panel>
 
   <panel_2>
@@ -31,6 +31,19 @@
   <model>
    <path>Aircraft/ornithopter/Models/ornithopter-8-4-model.xml</path>
   </model>
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y" type="double">0.0</x-offset-m>
+    <y-offset-m archive="y" type="double">0.62</y-offset-m>
+    <z-offset-m archive="y" type="double">-1.12</z-offset-m>
+    <pitch-offset-deg>-6.0</pitch-offset-deg>
+   </config>
+  </view>
 
   <view n="1">
    <config>

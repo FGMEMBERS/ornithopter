@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>ornithopteralt.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Needle2</object-name>
+  <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>1.8</dep>
+   </entry>
+   <entry>
+    <ind>1000</ind>
+    <dep>60</dep>
+   </entry>
+   <entry>
+    <ind>2000</ind>
+    <dep>121</dep>
+   </entry>
+   <entry>
+    <ind>3000</ind>
+    <dep>184</dep>
+   </entry>
+   <entry>
+    <ind>4000</ind>
+    <dep>247</dep>
+   </entry>
+   <entry>
+    <ind>2000</ind>
+    <dep>270</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PressureDial</object-name>
+  <property>/instrumentation/altimeter/setting-inhg</property>
+  <interpolation>
+   <entry>
+    <ind>28</ind>
+    <dep>-200</dep>
+   </entry>
+   <entry>
+    <ind>30</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>31.3</ind>
+    <dep>130</dep>
+   </entry>
+  </interpolation>
+  <axis>
+
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
+
+

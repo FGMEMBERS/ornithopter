@@ -10,6 +10,37 @@
   <pitch-deg>6</pitch-deg>
  </offsets>
 
+ <!-- panel models -->
+ <model>
+  <path>Aircraft/ornithopter/Models/ornithopteralt.xml</path>
+  <offsets>
+   <x-m>-1.79</x-m>
+   <y-m>0.05</y-m>
+   <z-m>0.16</z-m>
+   <pitch-deg>-25</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/ornithopter/Models/ornithopterasi.xml</path>
+  <offsets>
+   <x-m>-1.79</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>0.16</z-m>
+   <pitch-deg>-25</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/ornithopter/Models/compass.xml</path>
+  <offsets>
+   <x-m>-1.84</x-m>
+   <y-m>-0.00</y-m>
+   <z-m>0.24</z-m>
+   <pitch-deg>-10</pitch-deg>
+  </offsets>
+ </model>
+
 <!-- Canopy, fix hinge point-->
  <animation>
   <type>rotate</type>

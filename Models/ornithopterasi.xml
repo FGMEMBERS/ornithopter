@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>ornithopterasi.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Needle1</object-name>
+  <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>10</ind>
+    <dep>11.4</dep>
+   </entry>
+   <entry>
+    <ind>20</ind>
+    <dep>27.65</dep>
+   </entry>
+   <entry>
+    <ind>30</ind>
+    <dep>58</dep>
+   </entry>
+   <entry>
+    <ind>40</ind>
+    <dep>100.84</dep>
+   </entry>
+   <entry>
+    <ind>50</ind>
+    <dep>162</dep>
+   </entry>
+   <entry>
+    <ind>60</ind>
+    <dep>227.9</dep>
+   </entry>
+   <entry>
+    <ind>70</ind>
+    <dep>292.47</dep>
+   </entry>
+   <entry>
+    <ind>80</ind>
+    <dep>354.74</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
+
+
