@@ -17,7 +17,6 @@
   <aircraft-dir>Aircraft/UIUC/ornithopter</aircraft-dir>
 
   <sound>
-   <audible>true</audible>
    <path>Aircraft/ornithopter/Sounds/ornithopter-sound.xml</path>
   </sound>
 
