@@ -13,35 +13,35 @@
     <dep>0</dep>
    </entry>
    <entry>
-    <ind>10</ind>
+    <ind>8.68976</ind>
     <dep>11.4</dep>
    </entry>
    <entry>
-    <ind>20</ind>
+    <ind>17.3795</ind>
     <dep>27.65</dep>
    </entry>
    <entry>
-    <ind>30</ind>
+    <ind>26.0693</ind>
     <dep>58</dep>
    </entry>
    <entry>
-    <ind>40</ind>
+    <ind>34.759</ind>
     <dep>100.84</dep>
    </entry>
    <entry>
-    <ind>50</ind>
+    <ind>43.4488</ind>
     <dep>162</dep>
    </entry>
    <entry>
-    <ind>60</ind>
+    <ind>52.1386</ind>
     <dep>227.9</dep>
    </entry>
    <entry>
-    <ind>70</ind>
+    <ind>60.8283</ind>
     <dep>292.47</dep>
    </entry>
    <entry>
-    <ind>80</ind>
+    <ind>69.5181</ind>
     <dep>354.74</dep>
    </entry>
   </interpolation>
