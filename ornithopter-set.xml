@@ -10,6 +10,7 @@
  <sim>
 
   <description>Ornithopter (UIUC)</description>
+  <author>Lee Elliot (3D), Michael Selig (FDM), Jim Wilson (Instruments)</author>
 
   <flight-model>larcsim</flight-model>
   <aero>uiuc</aero>
