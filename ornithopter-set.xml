@@ -9,6 +9,8 @@
 
  <sim>
 
+  <description>Ornithopter (UIUC)</description>
+
   <flight-model>larcsim</flight-model>
   <aero>uiuc</aero>
   <uiuc-type>uiuc-ornithopter</uiuc-type>
