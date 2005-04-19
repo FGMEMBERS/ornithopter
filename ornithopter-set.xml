@@ -53,6 +53,10 @@
    </config>
   </view>
 
+  <help>
+   <title>Ornithopter</title>
+  </help>
+
  </sim>
 
 </PropertyList>
