@@ -45,7 +45,7 @@
  <animation>
   <type>rotate</type>
   <object-name>Canopy</object-name>
-  <property>/canopy/position-norm</property>
+  <property>canopy/position-norm</property>
   <factor>4.0</factor>
   <center>
    <x-m>-2.0</x-m>
@@ -66,7 +66,7 @@
   <object-name>RWing-Hinge</object-name>
   <object-name>RWing-Pad</object-name>
   <object-name>RWing-Pivot</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -117,7 +117,7 @@
   <object-name>RWing-Hinge</object-name>
   <object-name>RWing-Pad</object-name>
   <object-name>RWing-Pivot</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor>-26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -143,31 +143,31 @@
    <or>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>0</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>31</value>
     </less-than>
     </and>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>149</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>211</value>
     </less-than>
     </and>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>329</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>360</value>
     </less-than>
     </and>
@@ -184,21 +184,21 @@
    <or>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>29</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>61</value>
     </less-than>
     </and>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>119</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>151</value>
     </less-than>
     </and>
@@ -214,11 +214,11 @@
   <condition>
    <and>
    <greater-than>
-    <property>/wing-phase/position-deg</property>
+    <property>wing-phase/position-deg</property>
     <value>59</value>
    </greater-than>
    <less-than>
-    <property>/wing-phase/position-deg</property>
+    <property>wing-phase/position-deg</property>
     <value>121</value>
    </less-than>
    </and>
@@ -234,21 +234,21 @@
    <or>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>209</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>241</value>
     </less-than>
     </and>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>299</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>331</value>
     </less-than>
     </and>
@@ -264,11 +264,11 @@
   <condition>
    <and>
    <greater-than>
-    <property>/wing-phase/position-deg</property>
+    <property>wing-phase/position-deg</property>
     <value>239</value>
    </greater-than>
    <less-than>
-    <property>/wing-phase/position-deg</property>
+    <property>wing-phase/position-deg</property>
     <value>301</value>
    </less-than>
    </and>
@@ -280,7 +280,7 @@
   <object-name>RWing-T</object-name>
   <object-name>RWing-B</object-name>
   <object-name>RWing-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -331,7 +331,7 @@
   <object-name>RWing-T</object-name>
   <object-name>RWing-B</object-name>
   <object-name>RWing-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor>-26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -350,7 +350,7 @@
   <object-name>RWing-Warp-up1-T</object-name>
   <object-name>RWing-Warp-up1-B</object-name>
   <object-name>RWing-Warp-up1-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -401,7 +401,7 @@
   <object-name>RWing-Warp-up1-T</object-name>
   <object-name>RWing-Warp-up1-B</object-name>
   <object-name>RWing-Warp-up1-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor>-26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -420,7 +420,7 @@
   <object-name>RWing-Warp-up2-T</object-name>
   <object-name>RWing-Warp-up2-B</object-name>
   <object-name>RWing-Warp-up2-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -471,7 +471,7 @@
   <object-name>RWing-Warp-up2-T</object-name>
   <object-name>RWing-Warp-up2-B</object-name>
   <object-name>RWing-Warp-up2-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor>-26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -490,7 +490,7 @@
   <object-name>RWing-Warp-down1-T</object-name>
   <object-name>RWing-Warp-down1-B</object-name>
   <object-name>RWing-Warp-down1-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -541,7 +541,7 @@
   <object-name>RWing-Warp-down1-T</object-name>
   <object-name>RWing-Warp-down1-B</object-name>
   <object-name>RWing-Warp-down1-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor>-26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -560,7 +560,7 @@
   <object-name>RWing-Warp-down2-T</object-name>
   <object-name>RWing-Warp-down2-B</object-name>
   <object-name>RWing-Warp-down2-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -611,7 +611,7 @@
   <object-name>RWing-Warp-down2-T</object-name>
   <object-name>RWing-Warp-down2-B</object-name>
   <object-name>RWing-Warp-down2-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor>-26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -636,7 +636,7 @@
   <object-name>LWing-Hinge</object-name>
   <object-name>LWing-Pad</object-name>
   <object-name>LWing-Pivot</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -687,7 +687,7 @@
   <object-name>LWing-Hinge</object-name>
   <object-name>LWing-Pad</object-name>
   <object-name>LWing-Pivot</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor> 26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -713,31 +713,31 @@
    <or>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>0</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>31</value>
     </less-than>
     </and>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>149</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>211</value>
     </less-than>
     </and>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>329</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>360</value>
     </less-than>
     </and>
@@ -754,21 +754,21 @@
    <or>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>29</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>61</value>
     </less-than>
     </and>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>119</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>151</value>
     </less-than>
     </and>
@@ -784,11 +784,11 @@
   <condition>
    <and>
    <greater-than>
-    <property>/wing-phase/position-deg</property>
+    <property>wing-phase/position-deg</property>
     <value>59</value>
    </greater-than>
    <less-than>
-    <property>/wing-phase/position-deg</property>
+    <property>wing-phase/position-deg</property>
     <value>121</value>
    </less-than>
    </and>
@@ -804,21 +804,21 @@
    <or>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>209</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>241</value>
     </less-than>
     </and>
     <and>
     <greater-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>299</value>
     </greater-than>
     <less-than>
-     <property>/wing-phase/position-deg</property>
+     <property>wing-phase/position-deg</property>
      <value>331</value>
     </less-than>
     </and>
@@ -834,11 +834,11 @@
   <condition>
    <and>
    <greater-than>
-    <property>/wing-phase/position-deg</property>
+    <property>wing-phase/position-deg</property>
     <value>239</value>
    </greater-than>
    <less-than>
-    <property>/wing-phase/position-deg</property>
+    <property>wing-phase/position-deg</property>
     <value>301</value>
    </less-than>
    </and>
@@ -850,7 +850,7 @@
   <object-name>LWing-T</object-name>
   <object-name>LWing-B</object-name>
   <object-name>LWing-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -901,7 +901,7 @@
   <object-name>LWing-T</object-name>
   <object-name>LWing-B</object-name>
   <object-name>LWing-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor> 26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -920,7 +920,7 @@
   <object-name>LWing-Warp-up1-T</object-name>
   <object-name>LWing-Warp-up1-B</object-name>
   <object-name>LWing-Warp-up1-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -971,7 +971,7 @@
   <object-name>LWing-Warp-up1-T</object-name>
   <object-name>LWing-Warp-up1-B</object-name>
   <object-name>LWing-Warp-up1-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor> 26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -990,7 +990,7 @@
   <object-name>LWing-Warp-up2-T</object-name>
   <object-name>LWing-Warp-up2-B</object-name>
   <object-name>LWing-Warp-up2-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -1041,7 +1041,7 @@
   <object-name>LWing-Warp-up2-T</object-name>
   <object-name>LWing-Warp-up2-B</object-name>
   <object-name>LWing-Warp-up2-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor> 26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -1060,7 +1060,7 @@
   <object-name>LWing-Warp-down1-T</object-name>
   <object-name>LWing-Warp-down1-B</object-name>
   <object-name>LWing-Warp-down1-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -1111,7 +1111,7 @@
   <object-name>LWing-Warp-down1-T</object-name>
   <object-name>LWing-Warp-down1-B</object-name>
   <object-name>LWing-Warp-down1-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor> 26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -1130,7 +1130,7 @@
   <object-name>LWing-Warp-down2-T</object-name>
   <object-name>LWing-Warp-down2-B</object-name>
   <object-name>LWing-Warp-down2-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -1181,7 +1181,7 @@
   <object-name>LWing-Warp-down2-T</object-name>
   <object-name>LWing-Warp-down2-B</object-name>
   <object-name>LWing-Warp-down2-S</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor> 26.8</factor>
   <center>
    <x-m>0.0</x-m>
@@ -1211,7 +1211,7 @@
   <object-name>Wing-Center-RHinge</object-name>
   <object-name>Wing-Center-LPad</object-name>
   <object-name>Wing-Center-RPad</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <factor>.33</factor>
   <center>
    <x-m>0.0</x-m>
@@ -1234,7 +1234,7 @@
   <object-name>RWing-Pivot-Strut-Os</object-name>
   <object-name>RWing-Pivot-Strut-T</object-name>
   <object-name>R-EXPERIMENTAL</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -1294,7 +1294,7 @@
   <object-name>LWing-Pivot-Strut-Os</object-name>
   <object-name>LWing-Pivot-Strut-T</object-name>
   <object-name>L-EXPERIMENTAL</object-name>
-  <property>/wing-phase/position-norm</property>
+  <property>wing-phase/position-norm</property>
   <interpolation>
    <entry>
     <ind>-1.00000000</ind>
@@ -1352,7 +1352,7 @@
   <object-name>Rudder-R</object-name>
   <object-name>Rudder-S</object-name>
   <object-name>Rudder-Horns</object-name>
-  <property>/surface-positions/flight/left-aileron-pos-norm</property>
+  <property>surface-positions/flight/left-aileron-pos-norm</property>
   <factor>20</factor>
   <center>
    <x-m>5.010</x-m>
@@ -1381,7 +1381,7 @@
   <object-name>RElevator-Tip-Att-01</object-name>
   <object-name>RElevator-Tip-Att-02</object-name>
   <object-name>RElevator-Tip-Att-03</object-name>
-  <property>/surface-positions/flight/elevator-pos-norm</property>
+  <property>surface-positions/flight/elevator-pos-norm</property>
   <factor>10</factor>
   <center>
    <x-m>5.25</x-m>
@@ -1403,7 +1403,7 @@
   <object-name>FGearCastor</object-name>
   <object-name>FS-Damper-Top</object-name>
   <object-name>FS-Damper-Bottom</object-name>
-  <property>/surface-positions/flight/rudder-pos-norm</property>
+  <property>surface-positions/flight/rudder-pos-norm</property>
   <factor>-20</factor>
   <center>
    <x-m>-1.94</x-m>
@@ -1425,7 +1425,7 @@
   <object-name>Helmet</object-name>
   <object-name>Visor</object-name>
   <object-name>Microphone</object-name>
-  <property>/accelerations/pilot/z-accel-fps_sec[0]</property>
+  <property>accelerations/pilot/z-accel-fps_sec[0]</property>
   <interpolation>
    <entry>
     <ind>-180</ind>
