@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+
+************************************************************************
+-->
+
+<PropertyList>
+
+ <sim>
+
+  <description>Ornithopter (UIUC)</description>
+  <author>Lee Elliot (3D), Michael Selig (FDM), Jim Wilson (Instruments)</author>
+
+  <flight-model>larcsim</flight-model>
+  <aero>uiuc</aero>
+  <uiuc-type>uiuc-ornithopter</uiuc-type>
+  <aircraft-dir>Aircraft/UIUC/ornithopter</aircraft-dir>
+
+  <sound>
+   <path>Aircraft/ornithopter/Sounds/ornithopter-sound.xml</path>
+  </sound>
+
+  <panel>
+   <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
+   <visibility>false</visibility>
+  </panel>
+
+  <panel_2>
+   <path>Aircraft/Generic/Panels/generic-trans-mini-panel.xml</path>
+  </panel_2>
+
+  <model>
+   <path>Aircraft/ornithopter/Models/ornithopter-8-4-model.xml</path>
+  </model>
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y" type="double">0.0</x-offset-m>
+    <y-offset-m archive="y" type="double">0.62</y-offset-m>
+    <z-offset-m archive="y" type="double">-1.12</z-offset-m>
+    <pitch-offset-deg>-6.0</pitch-offset-deg>
+   </config>
+  </view>
+
+  <view n="1">
+   <config>
+    <eye-heading-deg-path>/orientation/gamma-horiz-deg</eye-heading-deg-path>
+   </config>
+  </view>
+
+  <help>
+   <title>Ornithopter</title>
+  </help>
+
+ </sim>
+
+</PropertyList>
+

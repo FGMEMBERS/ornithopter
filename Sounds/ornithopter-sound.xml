@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+ 
+<PropertyList>
+
+ <fx>
+ 
+  <crank>
+   <name>crank</name>
+   <path>Sounds/cranking.wav</path>
+   <property>/engines/engine/cranking</property>
+   <volume>
+    <offset>0.5</offset>
+   </volume>
+  </crank>
+ 
+  <engine>
+   <name>engine</name>
+   <path>Sounds/wasp.wav</path>
+   <mode>looped</mode>
+   <property>/engines/engine/running</property>
+   <volume>
+    <property>/thorax/volume</property>
+    <factor>1</factor>
+    <min>0.15</min>
+    <max>0.8</max>
+    <offset>0.15</offset>
+   </volume>
+   <pitch>
+    <property>/thorax/rpm</property>
+    <factor>6.5</factor>
+    <min>6.5</min>
+    <max>6.5</max>
+    <offset>0.3</offset>
+   </pitch>
+  </engine>
+ 
+
+</fx>
+ 
+</PropertyList>
