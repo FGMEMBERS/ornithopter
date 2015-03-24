@@ -1,0 +1,255 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Aircraft:
+#
+# Ornithopter
+#
+# File
+# ornithopter-v1-nl (version 1, non-linear model)
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Contributors:
+# 
+# 2003/01/13  Robert Deters (UIUC), file creation and code and supporting
+#             code integration
+#
+# 2003/02/02  Updates by Michael Selig, Rob Deters and James DeLaurier & Co
+#             http://www.uiuc.edu/~m-selig
+#             http://www.ornithopter.net
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# References:
+#
+# [1] Prof Jame DeLaurier, Theresa Robinson and several other contributors
+#     http://www.ornithopter.net
+#
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Notes:
+#
+# [1] Uses data from Prof Jame DeLaurier and Theresa Robinson
+#
+# [2] Additional models and updates 
+#     http://www.aae.uiuc.edu/m-selig/apasim.html
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# Todo:
+# [] update the gear gear_rate line when we do re-org in input file reader
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+init use_V_rel_wind_2U    
+init use_dyn_on_speed_curve1    
+init dyn_on_speed  2    
+init dyn_on_speed_zero 1    
+init use_Alpha_dot_on_speed 7   # [ft/sec] speed below which Alpha_dot is set to zero    
+init use_gamma_horiz_on_speed 15 # [ft/sec] speed above which Gamma_horiz_deg is used in chase view [1]
+
+init Dx_cg -.225
+
+init U_body 40
+init V_body 0
+init W_body 0
+init Q_body -.3
+
+#init downwashMode 100    
+#init downwashCoef 0.025  # [1/ft] [ ] placeholder
+
+geometry bw   41.2      # [ft]
+geometry cbar  3.6      # [ft]
+geometry Sw  148.0      # [ft^2]
+
+# This is setup so that aileron input actually gives rudder.
+# So in this file, da is actually rudder input dr.
+controlSurface de 10 10  # [deg]  placeholder
+controlSurface da 20 20  # [deg]  placeholder, rudder
+
+# 030501 p 3
+mass Weight  789      # [lb]
+mass I_xx    500      # [slug-ft^2]
+mass I_yy    529      # [slug-ft^2]
+mass I_zz    958      # [slug-ft^2]
+mass I_xz    0.0      # [slug-ft^2]
+
+misc flapper
+misc flapper_phi_init 0.0
+
+CL CL_q     7.589       # [/rad] [x] orninotes 030301 p 18
+CL CL_adot  1.89        # [/rad] [x] orninotes 030301 p 18
+# subwing contribution
+CL CL_a 1.387
+CL CLo  0.45
+CD CDK  0.198
+
+CD CDo 0.030 
+Cm Cmo .14
+Cm Cm_de     -3.76              # [/rad] [x] orninotes 030301 p 18
+Cm Cm_q     -30.68              # [/rad] [x] orninotes 030301 p 18
+Cm Cm_adot   -7.67              # [/rad] [x] orninotes 030301 p 18
+
+# rudder terms, coming in as aileron stick control, however.
+CY CY_da     0.148      # [/rad] [x] orninotes 030301 p 9
+Cl Cl_da     0.0152     # [/rad] [x] orninotes 030301 p 9
+Cn Cn_da    -0.050      # [/rad] [x] orninotes 030301 p 9
+
+# yaw rate r terms
+CY CY_r      0.1662     # [/rad] [x] orninotes 030301 p 17
+Cl Cl_r      0.366      # [/rad] [x] orninotes 030301 p 15
+Cn Cn_r     -0.0881     # [/rad] [x] orninotes 030301 p 16
+
+# beta terms
+CY CY_beta  -0.3708     # [/rad] [x] orninotes 030301 p 11 and 030216 p 3
+Cl Cl_beta  -0.252      # [/rad] [x] orninotes 030301 p 13
+Cn Cn_beta   0.0946     # [/rad] [x] orninotes 030301 p 11
+
+# roll rate p terms
+Cl Cl_p     -0.653      # [/rad] [x] orninotes 030301 p 14
+Cn Cn_p     -0.06016    # [/rad] [x] orninotes 030301 p 14
+
+# nose wheel (must be position 0 if present)
+gear Dx_gear     0    5.5     # x-offset from CG [ft]
+gear Dy_gear     0    0       # y-offset from CG [ft]
+gear Dz_gear     0    4.45      # z-offset from CG [ft]
+gear cgear       0   78       # damping [lbs/ft/sec]
+gear kgear       0  720       # springiness [lbs/ft]
+gear muGear      0    0.01    # rolling coefficient
+gear strutLength 0   -0.5     # gear travel [ft] (not yet used)
+
+# right gear (must be position 1 if present)
+gear Dx_gear     1    -.75     # x-offset from CG [ft]          
+gear Dy_gear     1    3.25    # y-offset from CG [ft]          
+gear Dz_gear     1    5.50    # z-offset from CG [ft]          
+gear cgear       1    50      # damping [lbs/ft/sec]           
+gear kgear       1   556      # springiness [lbs/ft]           
+gear muGear      1    0.01    # rolling coefficient            
+gear strutLength 1    2.5     # gear travel [ft] (not yet used)
+
+# left gear (must be position 2 if present)
+gear Dx_gear     2    -.75     # x-offset from CG [ft]          
+gear Dy_gear     2   -3.25    # y-offset from CG [ft]          
+gear Dz_gear     2    5.50    # z-offset from CG [ft]          
+gear cgear       2    50      # damping [lbs/ft/sec]           
+gear kgear       2   556      # springiness [lbs/ft]           
+gear muGear      2    0.01    # rolling coefficient            
+gear strutLength 2    2.5     # gear travel [ft] (not yet used)
+
+# tail
+gear Dx_gear     3  -15.4     # x-offset from CG [ft]          
+gear Dy_gear     3    0       # y-offset from CG [ft]          
+gear Dz_gear     3    3.5     # z-offset from CG [ft]          
+gear cgear       3  170       # damping [lbs/ft/sec]           
+gear kgear       3  350       # springiness [lbs/ft]           
+gear muGear      3    0.01    # rolling coefficient            
+gear strutLength 3    2.5     # gear travel [ft] (not yet used)
+
+
+# right wing
+gear Dx_gear     5    0       # x-offset from CG [ft]          
+gear Dy_gear     5   21       # y-offset from CG [ft]          
+gear Dz_gear     5    1       # z-offset from CG [ft]          
+gear cgear       5  200       # damping [lbs/ft/sec]           
+gear kgear       5  400       # springiness [lbs/ft]           
+gear muGear      5    0.01    # rolling coefficient            
+gear strutLength 5   -0.5     # gear travel [ft] (not yet used)
+
+# left wing
+gear Dx_gear     6    0       # x-offset from CG [ft]          
+gear Dy_gear     6  -21       # y-offset from CG [ft]          
+gear Dz_gear     6    1       # z-offset from CG [ft]          
+gear cgear       6  200       # damping [lbs/ft/sec]           
+gear kgear       6  400       # springiness [lbs/ft]           
+gear muGear      6    0.01    # rolling coefficient            
+gear strutLength 6   -0.5     # gear travel [ft] (not yet used)
+
+# the dummy points below are used for two purposes:
+# [1] dampen ground collisions
+# [2] make the airplane "self-righting" if it lands upside down
+
+# ahead of nose     (dummy point)
+gear Dx_gear     14   8       # x-offset from CG [ft]          
+gear Dy_gear     14   0       # y-offset from CG [ft]          
+gear Dz_gear     14   3       # z-offset from CG [ft]          
+gear cgear       14  50       # damping [lbs/ft/sec]           
+gear kgear       14 100       # springiness [lbs/ft]           
+gear muGear      14   0.01    # rolling coefficient            
+gear strutLength 14  -0.5     # gear travel [ft] (not yet used)
+
+# ahead
+gear Dx_gear     7      20      # [ft]
+gear Dy_gear     7       0      # [ft]
+gear Dz_gear     7      -4.5    # [ft]
+gear cgear       7       5      # [lbs/ft/sec]
+gear kgear       7      10      # [lbs/ft]
+gear muGear      7     0.0      # rolling coefficient
+gear strutLength 7     -.5      # gear travel [ft] (not yet used)
+
+# far ahead of nose (dummy point)
+gear Dx_gear     4   20       # x-offset from CG [ft]          
+gear Dy_gear     4    0       # y-offset from CG [ft]          
+gear Dz_gear     4    1       # z-offset from CG [ft]          
+gear cgear       4   10       # damping [lbs/ft/sec]           
+gear kgear       4   20       # springiness [lbs/ft]           
+gear muGear      4    0.01    # rolling coefficient            
+gear strutLength 4   -0.5     # gear travel [ft] (not yet used)
+
+# above 
+gear Dx_gear     8       0      # [ft]
+gear Dy_gear     8       0      # [ft]
+gear Dz_gear     8    -100      # [ft]
+gear cgear       8       5      # [lbs/ft/sec]
+gear kgear       8      10      # [lbs/ft]
+gear muGear      8     0.0      # rolling coefficient
+gear strutLength 8     -.5      # gear travel [ft] (not yet used)
+
+# above 
+gear Dx_gear     9        0      # [ft]
+gear Dy_gear     9        0      # [ft]
+gear Dz_gear     9      -10      # [ft]
+gear cgear       9        5      # [lbs/ft/sec]
+gear kgear       9       10      # [lbs/ft]
+gear muGear      9      0.0      # rolling coefficient
+gear strutLength 9      -.5      # gear travel [ft] (not yet used)
+
+# above
+gear Dx_gear     10     -20      # [ft]
+gear Dy_gear     10       0      # [ft]
+gear Dz_gear     10     -60      # [ft]
+gear cgear       10       5      # [lbs/ft/sec]
+gear kgear       10      10      # [lbs/ft]
+gear muGear      10     0.0      # rolling coefficient
+gear strutLength 10     -.5      # gear travel [ft] (not yet used)
+
+# far ahead of nose (dummy point)
+gear Dx_gear     11  10       # x-offset from CG [ft]          
+gear Dy_gear     11   0       # y-offset from CG [ft]          
+gear Dz_gear     11   1       # z-offset from CG [ft]          
+gear cgear       11   5       # damping [lbs/ft/sec]           
+gear kgear       11  10       # springiness [lbs/ft]           
+gear muGear      11   0.01    # rolling coefficient            
+gear strutLength 11  -0.5     # gear travel [ft] (not yet used)
+
+
+# out left wing     (dummy point)
+gear Dx_gear     12   0       # x-offset from CG [ft]          
+gear Dy_gear     12 -50       # y-offset from CG [ft]          
+gear Dz_gear     12 -30       # z-offset from CG [ft]          
+gear cgear       12   5       # damping [lbs/ft/sec]           
+gear kgear       12  10       # springiness [lbs/ft]           
+gear muGear      12   0.01    # rolling coefficient            
+gear strutLength 12  -0.5     # gear travel [ft] (not yet used)
+
+
+# out right wing    (dummy point)
+gear Dx_gear     13   0       # x-offset from CG [ft]          
+gear Dy_gear     13  50       # y-offset from CG [ft]          
+gear Dz_gear     13 -30       # z-offset from CG [ft]          
+gear cgear       13   5       # damping [lbs/ft/sec]           
+gear kgear       13  10       # springiness [lbs/ft]           
+gear muGear      13   0.01    # rolling coefficient            
+gear strutLength 13  -0.5     # gear travel [ft] (not yet used)
+
+*
