@@ -15,7 +15,6 @@
   <flight-model>larcsim</flight-model>
   <aero>uiuc</aero>
   <uiuc-type>uiuc-ornithopter</uiuc-type>
-  <aircraft-dir>Aircraft/UIUC/ornithopter</aircraft-dir>
 
   <sound>
    <path>Aircraft/ornithopter/Sounds/ornithopter-sound.xml</path>
